@@ -10,17 +10,7 @@ li,ul,ol {
   --font-secondary: "Poppins", sans-serif;
 }
 
-/* Colors */
-:root {
-  --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
-}
 
-/* Smooth scroll behavior */
-:root {
-  scroll-behavior: smooth;
-}
 
 /*--------------------------------------------------------------
 # General
@@ -101,10 +91,10 @@ section {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-secondary);
+  background: #f85a40;
   width: 44px;
   height: 44px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.4s;
 }
 
@@ -115,7 +105,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  background: #e82d2d;
   color: #fff;
 }
 
@@ -142,21 +132,32 @@ section {
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
-  color: #fff;
   padding: 0;
 }
 
 
 
 .topbar .social-links a {
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 0;
-  transition: 0.3s;
+  filter: grayscale(1);
+  transition: 2s;
   margin-left: 20px;
 }
 
 .topbar .social-links a:hover {
+  filter: grayscale(0);
+}
+
+.topbar .search a {
   color: #fff;
+  font-size: 16px;
+  transform: scale(1);
+  transition: .5s;
+  margin-left: 20px;
+}
+
+.topbar .search a:hover {
+  transform: scale(1.1);
+  color: #111;
 }
 
 .header {
@@ -166,14 +167,6 @@ section {
   background-color: #fff;
 }
 
-.header.sticked {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 70px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-}
 
 .header .logo img {
   max-height: 40px;
@@ -183,9 +176,6 @@ section {
 .header .logo h1 {
   margin: 0 auto;
 }
-
-
-
 
 
 section {
@@ -311,7 +301,7 @@ section {
   }
 
   .navbar .dropdown .dropdown ul img {
-    filter:  grayscale(1);
+    filter:  grayscale(1) ;
     width: 18px;
     margin-right: 20px;
     transition: .5s;
@@ -568,6 +558,7 @@ section {
 
 .hero video {
   width: 90%;
+  object-fit: contain;
 }
 
 
@@ -606,7 +597,7 @@ section {
 }
 
 .hero .icon-box {
-  opacity: .9;
+  opacity: .95;
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
@@ -687,7 +678,235 @@ section {
 #content i {
   font-size: 24px;
   color: #111;
+  transition:all .5s;
 }
+
+#content i:hover {
+  font-size: 24px;
+  color: #0078d4;
+}
+
+#content .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+#content .swiper-pagination .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 0px;
+  background-color: #f9f9f9;
+  opacity: 1;
+}
+
+#content .swiper-pagination .swiper-pagination-bullet-active {
+background-color: #0078d4;
+}
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+
+#pricing .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pricing h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#pricing i {
+  font-size: 24px;
+  color: #111;
+  transition:all .5s;
+}
+
+#pricing i:hover {
+  font-size: 24px;
+  color: #0078d4;
+}
+
+#pricing {
+  padding: 60px 0;
+}
+
+#pricing .bg {
+  background-color: #f9f9f9;
+}
+
+.pricing .box {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.pricing .box .price_text h2 {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #cc1616;
+}
+
+.pricing .box .price_text span {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #191919;
+  text-decoration: line-through;
+}
+
+.pricing .box .price_text p {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #191919;
+}
+
+.pricing .box .price_title {
+  text-align: left;
+  padding-left: 15px;
+  line-height: .5;
+}
+
+.pricing .box .price_title h2 {
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #191919;
+}
+
+.pricing .box .price_title p {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #191919;
+  padding-bottom: 20px;
+}
+
+.pricing .box .spec li {
+  text-align: left;
+  list-style-position: inside;
+  list-style: square;
+}
+
+.pricing .box .spec li sup {
+  font-size: 8px;
+}
+
+
+
+
+.pricing .box .buy {
+  background: #cc1616;
+  display: inline-block;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .box .buy:hover {
+  background: #e82d2d;
+}
+
+.pricing .box .more {
+  border: 3px solid #cc1616;
+  display: inline-block;
+  padding: 10px 40px;
+  color: #cc1616;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .box .more:hover {
+  background: #cc1616;
+  color: #fff;
+  
+}
+
+.pricing .box .hidden {
+  text-align: right;
+  display: block;
+}
+
+@media (max-width : 992px) {
+  .pricing .box .price_text h2 {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #cc1616;
+  }
+  
+  .pricing .box .price_text span {
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #191919;
+    text-decoration: line-through;
+  }
+  
+  .pricing .box .price_text p {
+    font-weight: 400;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #191919;
+  }
+  
+  .pricing .box .price_title h2 {
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #191919;
+  }
+  
+  .pricing .box .price_title p {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #191919;
+  }
+  
+  .pricing .box .spec li {
+    text-align: left;
+    list-style-position: inside;
+    list-style: square;
+  }
+  
+  .pricing .box .spec li sup {
+    font-size: 6px;
+  }
+
+  .pricing .box .hidden {
+    text-align: center;
+    display: block;
+  }
+}
+
+/* @media (max-width: 480px) {
+
+} */
+
 
 
 

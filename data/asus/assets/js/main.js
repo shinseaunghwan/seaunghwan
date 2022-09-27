@@ -144,15 +144,58 @@ document.addEventListener('DOMContentLoaded', () => {
     clickable: true
   },
   breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 40
-    },
     480: {
+      slidesPerView: 1,
+    },
+    640: {
       slidesPerView: 3,
       spaceBetween: 40
-    },
+    }
     
+  }
+});
+
+/**
+   * price Slider
+   */
+  new Swiper('.price-slider', {
+  speed: 400,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  breakpoints: {
+    slidesPerView: 1,
+}
+});
+
+/**
+   * hotdill Slider
+   */
+  new Swiper('.hotdill-slider', {
+  speed: 400,
+  loop: true,
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  effect: 'slide',
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    clickable: true
+  },
+  breakpoints: {
+      slidesPerView: 1,
   }
 });
 
@@ -161,41 +204,18 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   new PureCounter();
 
-  /**
-   * Init swiper slider with 1 slide at once in desktop view
-   */
-  new Swiper('.slides-1', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
 
   /**
    * Animation on scroll function and init
    */
-  function aos_init() {
+
+  window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
       mirror: false
     });
-  }
-  window.addEventListener('load', () => {
-    aos_init();
   });
 
 });
