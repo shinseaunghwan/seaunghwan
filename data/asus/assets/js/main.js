@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
   speed: 400,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false
   },
   slidesPerView: 'auto',
@@ -219,3 +219,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+

@@ -442,11 +442,6 @@ h6 {
   background: #ff5900;
 }
 
-#hero img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
 
 #hero .intro-info:hover img {
   transform: scale(1.1);
@@ -562,7 +557,7 @@ section {
 }
 
 #services .box:hover .title a {
-  color: #1bb1dc;
+  color: #e60012;
 }
 
 #services .description {
@@ -582,21 +577,22 @@ section {
   border: 1rem #fff;
 }
 
-#call-to-action .bn {
-  margin: 0 auto;
+@media (max-width: 991px) {
+  #call-to-action .banner {
+    padding: 20px;
+  }
 }
 
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 
-  #call-to-action .bn {
-    margin-left: 30px;
-  }
+  
+
 }
 
 #call-to-action .cta-btn {
@@ -608,7 +604,6 @@ section {
   padding: 8px 26px;
   border-radius: 3px;
   transition: 0.5s;
-  margin: 10px;
   border: 3px solid #fff;
   color: #fff;
 }
