@@ -16,6 +16,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -44,7 +45,7 @@
   <div id="hero" class="home">
 
     <div class="container">
-      <div class="hero-content" data-aos="zoom-out">
+      <div class="hero-content animate__animated animate__lightSpeedInLeft">
         <h3>2022 WEB DESIGNER & PUBLISHER</h3>
         <h1>Portfolio</h1>
         <h5><span class="typed" data-typed-items="Design by Shin SeaungHwan"></span></h5>
@@ -77,7 +78,7 @@
         <div class="bird-container-8">
           <div class="bird-8"></div>
         </div>
-      </div>
+      </div> <!--bird animation end-->
     </div>
 
   </div><!-- End Hero -->
@@ -85,6 +86,10 @@
   <main id="main">
 
         <!-- ======= About Section ======= -->
+
+        
+
+
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -96,104 +101,176 @@
           <div class="col-lg-4">
             <img src="assets/img/me.png" id="me" class="img-fluid" alt="About me">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="me">
-                  <li class="title"><i class="bi bi-cloud-fill"></i><strong>Profile</strong></li>
-                  <li><strong>Name</strong><span>신승환</span></li>
-                  <li><strong>Birth</strong><span>1994.06.22</span></li>
-                  <li><strong>Phone</strong><span>010-3318-4720</span></li>
-                  <li><strong>City</strong><span>Daejeon Bansuk</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li class="title"><i class="bi bi-cloud-sun-fill"></i><strong>License</strong></li>
-                  <li>웹디자인 기능사</li>
-                  <li>JLPT N1</li>
-                  <li>ITQ 워드, 파워포인트</li>
-                  <li>한자검정 3급</li>
-                </ul>
-                
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="c1">
-                  <li class="title"><i class="bi bi-cloud-rain-fill"></i><strong>Achievment</strong></li>
-                  <li><span>한밭대학교 일본어학과 중퇴</span><strong>2016.03</strong></li>
-                  <li><span>城西国際대학교 미디어학과 졸업</span><strong>2022.04</strong></li>
-                  <li><span>웹디자인 & 멀티미디어 컨텐츠 제작 수료</span><strong>2022.10</strong></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="c2">
-                  <li class="title"><i class="bi bi-cloud-moon-fill"></i><strong>Experience</strong></li>
-                  <li><span>각종 아르바이트</span><strong>2013.04 - 2014.07</strong></li>
-                  <li><span>한일어린이스포츠 통역</span><strong>2015.9 - 7일</strong></li>
-                  <li><span>아키타대학교 교환학생</span><strong>2015.04 - 2016.03</strong></li>
-                  <li><span>병역의 의무(공군)</span><strong>2016.10 - 2018.10</strong></li>
-                  <li><span>졸업 작품 전시회</span><strong>2022.03</strong></li>
-                </ul>
-              </div>
-            </div>
-            <div class="skills">
-              <div class="row skills-content">
-    
-                <div class="col-lg-6">
-      
-                  <div class="progress">
-                    <span class="skill">HTML&CSS<i class="val"><span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-      
-                  <div class="progress">
-                    <span class="skill">ILLUSTRATOR<i class="val"><span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  
-      
-                  <div class="progress">
-                    <span class="skill">PREMIER PRO<i class="val"><span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  
-      
-                </div>
-                <div class="col-lg-6">
+          <div class="col-lg-8 content">  <!-- pt-4 pt-lg-0-->
 
-                  <div class="progress">
-                    <span class="skill">JAVASCRIPT<i class="val"><span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="about-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <div class="row">
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h3><span class="animate__animated animate__infinite animate__fadeInLeft"><i class="bi bi-cloud-fill"></i></span><strong>Profile</strong></h3>
+                      </div>
+                    </div>
+                    <div class="row me">
+                      
+                      <div class="col-2">
+                        <ul>
+                          <li class="title"></li>
+                      <li>Name</li>
+                      <li>Birth</li>
+                      <li>Phone</li>
+                      <li>City</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>신승환</li>
+                          <li>1994.06.22</li>
+                          <li>010-3318-4720</li>
+                          <li>Daejeon Bansuk</li>
+                        </ul>
+                      </div>
+                      <div class="col-4"></div>
+                      
                     </div>
                   </div>
-      
-                  <div class="progress">
-                    <span class="skill">PHOTOSHOP<i class="val"><span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="col-lg-6">
+                    <h3><i class="bi bi-cloud-sun-fill"></i><strong>License</strong></h3>
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li>웹디자인 기능사</li>
+                          <li>JLPT N1</li>
+                          <li>ITQ 워드, 파워포인트</li>
+                          <li>한자검정 3급</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        
+                      </div>
                     </div>
                   </div>
-                  
-      
-                  <div class="progress">
-                    <span class="skill">AFTER EFFECT<i class="val"><span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h3><i class="bi bi-cloud-rain-fill"></i><strong>Achievment</strong></h3>
+                        </div>
+                      </div>
+                      <div class="row me">
+                        
+                        <div class="col-9">
+                          <ul>
+                            <li>한밭대학교 일본어학과 중퇴</li>
+                            <li>城西国際대학교 미디어학과 졸업</li>
+                            <li>웹디자인 & 멀티미디어 컨텐츠 제작 수료</li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <ul>
+                        <li>2016.03</li>
+                        <li>2022.04</li>
+                        <li>2022.10</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h3><i class="bi bi-cloud-moon-fill"></i><strong>Experience</strong></h3>
+                        </div>
+                      </div>
+                      <div class="row me">
+                        
+                        <div class="col-6">
+                          <ul>
+                            <li>각종 아르바이트</li>
+                            <li>아키타대학교 교환학생</li>
+                            <li>한일어린이스포츠 통역</li>
+                            <li>병역의 의무(공군)</li>
+                            <li>졸업 작품 전시회</li>
+                          </ul>
+                        </div>
+                        <div class="col-6">
+                          <ul>
+                            <li>2013.04 - 2014.07</li>
+                            <li>2015.04 - 2016.03</li>
+                            <li>2015.9 - 7일</li>
+                            <li>2016.10 - 2018.10</li>
+                            <li>2022.03</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                 
+                </div>
+              </div>
+            </div>
+            <div class="row skills skills-content">
+        
+              <div class="col-lg-6">
+    
+                <div class="progress">
+                  <span class="skill">HTML&CSS<i class="val"><span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">ILLUSTRATOR<i class="val"><span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+    
+                <div class="progress">
+                  <span class="skill">PREMIER PRO<i class="val"><span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+    
+              </div>
+              <div class="col-lg-6">
+
+                <div class="progress">
+                  <span class="skill">JAVASCRIPT<i class="val"><span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">PHOTOSHOP<i class="val"><span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+    
+                <div class="progress">
+                  <span class="skill">AFTER EFFECT<i class="val"><span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </div>
             </div> <!--skill-->
+          </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          
+                
           </div>
         </div>
 
@@ -330,17 +407,22 @@
           <h2>Contact Me</h2>
           <p></p>
         </div>
-            <div data-aos="flip-down" class="row">
+            <div data-aos="fade-up" class="row">
               <div class="col-md-6">
                 <div class="info-box mt-4">
-                  <i class="bi bi-envelope-open"></i>
+                  <div class="animate__animated animate__infinite animate__swing">
+                    <i class="bi bi-envelope-open"></i>
+                  </div>
                   <h3>Email</h3>
                   <p>hanan0912@icloud.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
-                  <i class="bi bi-phone-vibrate-fill"></i>
+                  <div class="animate__animated animate__infinite animate__tada">
+                    <i class="bi bi-phone-vibrate-fill "></i>
+                  </div>
+                  
                   <h3>Tel</h3>
                   <p>010-3318-4720</p>
                 </div>
