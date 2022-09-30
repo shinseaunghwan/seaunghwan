@@ -248,8 +248,7 @@ a:hover {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/main_page.png") repeat scroll center center/cover;
-  background-color: skyblue;
+  background: url("../img/main_page.png") no-repeat center bottom/cover;
   height: 100vh;
   width: 100%;
   animation: bg 17s linear infinite;
@@ -257,19 +256,20 @@ a:hover {
 
 @keyframes bg {
   0% {
-    background-color: skyblue;
+    background-color: lightskyblue;
   }
   25% {
-    background-color: rgb(0, 162, 226);
+    background-color: skyblue;
   }
+
   50% {
-    background-color: rgb(73, 0, 229);
+    background-color:   ;
   }
   75% {
-    background-color: rgb(27, 0, 78);
+    background-color: midnightblue;
   }
   100% {
-    background-color: skyblue;
+    background-color: lightskyblue;
   }
   
 }
@@ -284,21 +284,60 @@ a:hover {
 }
 
 .hero-content h1 {
+  position: relative;
+  text-align: left;
+  font-family: 'Halt';
+  font-size: 9.2rem;
+  font-weight: normal;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
+
+.hero-content h1::after {
+  content: "Portfolio";
   font-family: 'Halt';
   font-size: 9rem;
   font-weight: normal;
   margin-bottom: 10px;
+  position: absolute;
   text-transform: uppercase;
-  color: #111;
-  transition: all .5s;
+  top: 0;
+  left: 0;
+  background: url(../img/w2.gif) no-repeat top/cover;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
+
 .hero-content h3 {
-  font-weight: 700;
+  position: relative;
+  font-family: 'Arial';
+  text-align: left;
+  font-weight: bold;
   text-transform: uppercase;
+  font-size: 2rem;
+  padding-left: 3px;
   color: #111;
-  transition: all .5s;
 }
+
+.hero-content h3::after {
+  content: "2022 WEB DESIGN & PUBLISHER";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/bg8.png) no-repeat center/cover;
+  -webkit-background-clip: text;
+  font-family: 'Arial';
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+}
+
 
 .hero-content h5 {
   text-align: center;
@@ -306,7 +345,6 @@ a:hover {
   letter-spacing: 3px;
   margin-top: 0;
   padding-right: 200px;
-  margin-bottom: 30px;
   text-transform: capitalize;
   color: #111;
   font-weight: 500;
@@ -605,7 +643,8 @@ section {
 
 .about {
   position: relative;
-  background: url(../img/bg1.png) no-repeat center center/cover;
+  background: url(../img/bg4.png) no-repeat center -100px/cover;
+  background-color: lightskyblue;
 }
 
 @media (min-width: 992px) {
@@ -639,11 +678,8 @@ section {
   border-bottom: 3px solid #222;
 }
 
-.about .content h3 i {
-  margin-right: 10px;
-}
-
-.about .content h3 span {
+.about .content span.icon {
+  font-size: 24px;
   display: inline-block;
 }
 
@@ -688,6 +724,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio {
+  background: url(../img/bg1.png) no-repeat center center/cover;
   position: relative;
   padding-bottom: 50px;
 }
@@ -847,6 +884,11 @@ section {
 /*--------------------------------------------------------------
 # Contact 
 --------------------------------------------------------------*/
+
+.contact {
+  background: url(../img/bg2.png) no-repeat center center/cover;
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -950,9 +992,15 @@ section {
     font-size: 7rem;
   }
 
+  .hero-content h1::after {
+    font-size: 7rem;
+  }
+
   .hero-content h3 {
     font-size: 1.25rem;
   }
+
+  
 
   .hero-content h5 {
     font-size: 1rem;
@@ -1035,6 +1083,10 @@ section {
   }
 
   .hero-content h1 {
+    font-size: 5rem;
+  }
+
+  .hero-content h1::after {
     font-size: 5rem;
   }
 
@@ -1122,6 +1174,12 @@ section {
 
   .hero-content h1 {
     font-size: 3rem;
+  }
+
+  .hero-content h1::after {
+
+    font-size: 3rem;
+
   }
 
   .hero-content h3 {

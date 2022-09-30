@@ -164,9 +164,7 @@
       new Typed('.typed', {
         strings: typed_strings,
         loop: false,
-        typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 2000
+        typeSpeed: 100
       });
     }
   },1200);
@@ -180,7 +178,7 @@
   speed: 400,
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 7000,
     disableOnInteraction: false
   },
   effect: 'coverflow',
