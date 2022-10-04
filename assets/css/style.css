@@ -247,6 +247,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
+
 #hero {
   background: url("../img/main_page.png") no-repeat center bottom/cover;
   height: 100vh;
@@ -307,7 +308,7 @@ a:hover {
   text-transform: uppercase;
   top: 0;
   left: 0;
-  background: url(../img/w2.gif) no-repeat top/cover;
+  background: url(../img/bg4.png) no-repeat center/cover;
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -346,10 +347,11 @@ a:hover {
   margin-top: 0;
   padding-right: 200px;
   text-transform: capitalize;
-  color: #111;
-  font-weight: 500;
+  color: #222;
+  font-weight: 700;
   transition: all .5s;
 }
+
 
 /* animation */
 .bird-one {
@@ -643,7 +645,7 @@ section {
 
 .about {
   position: relative;
-  background: url(../img/bg4.png) no-repeat center -100px/cover;
+  background: url(../img/bg4.png) no-repeat center top/cover;
   background-color: lightskyblue;
 }
 
@@ -683,6 +685,12 @@ section {
   display: inline-block;
 }
 
+@media (min-width: 992px) and (max-width: 1399px) {
+  .about .content .exp {
+    font-size: 12px;
+  }
+}
+
 
 
 
@@ -699,9 +707,10 @@ section {
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Arial", sans-serif;
+  color: #111;
 }
 
 .skills .progress .skill .val {
@@ -723,11 +732,15 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.bgt {
+  background: url(../img/bg3.png) no-repeat bottom center/cover;
+}
+
 #portfolio {
-  background: url(../img/bg1.png) no-repeat center center/cover;
   position: relative;
   padding-bottom: 50px;
 }
+
 
 #portfolio #portfolio-flters {
   padding: 0;
@@ -746,7 +759,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #333;
+  color: #222;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -780,13 +793,13 @@ section {
 
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #666;
+  color: #111;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-info p {
-  color: #999;
+  color: #555;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -886,19 +899,23 @@ section {
 --------------------------------------------------------------*/
 
 .contact {
-  background: url(../img/bg2.png) no-repeat center center/cover;
+  /* background: url(../img/bg11.png) no-repeat center bottom/cover; */
 }
 
+
 .contact .info-box {
-  color: #444444;
+  color: #333;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
 }
 
+
+
+
 .contact .info-box i.bi {
-  font-size: 24px;
-  color: #ffb727;
+  font-size: 36px;
+  color: #222;
   padding: 15px;
 }
 
@@ -907,7 +924,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #111;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -921,11 +938,13 @@ section {
 }
 
 
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #eee;
+  background-color: #efefef;
   padding-top: 50px;
   padding-bottom: 50px;
 }
