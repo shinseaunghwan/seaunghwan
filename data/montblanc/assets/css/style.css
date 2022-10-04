@@ -435,11 +435,35 @@ section {
   width: 100%;
 }
 
+@media (min-width:992px) and (max-width:1399px) {
+  #information h4 {
+    font-size: 16px;
+  }
+  #information h2 {
+    font-size: 20px;
+  }
+  #information p {
+    font-size: 12px;
+  }
+}
+
 /* information2 */
 
 #information_2 {
   padding: 60px 0;
   width: 100%;
+}
+
+@media (min-width:992px) and (max-width:1399px) {
+  #information_2 h4 {
+    font-size: 16px;
+  }
+  #information_2 h2 {
+    font-size: 20px;
+  }
+  #information_2 p {
+    font-size: 12px;
+  }
 }
 
 /* info3 */
