@@ -264,7 +264,7 @@ a:hover {
   }
 
   50% {
-    background-color:   ;
+    background-color:  steelblue;
   }
   75% {
     background-color: midnightblue;
@@ -688,6 +688,13 @@ section {
 @media (min-width: 992px) and (max-width: 1399px) {
   .about .content .exp {
     font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width:992px) {
+  .about .content {
+    color: #111;
   }
 }
 
