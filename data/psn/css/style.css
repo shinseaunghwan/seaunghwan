@@ -137,6 +137,30 @@ figure div.inner h1 {
   animation: h1 30s linear 1;
 }
 
+@media (min-width:919px) and (max-width:1102px) {
+  figure div.inner h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width:766px) and (max-width:918px) {
+  figure div.inner h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width:613px) and (max-width:765px) {
+  figure div.inner h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width:0px) and (max-width:612px) {
+  figure div.inner h1 {
+    font-size: 30px;
+  }
+}
+
 @keyframes h1 {
   0% {
     opacity: 1;
