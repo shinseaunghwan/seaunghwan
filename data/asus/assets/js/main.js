@@ -128,9 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 /**
-   * Clients Slider
+   * Campain Slider
    */
-  new Swiper('.clients-slider', {
+  new Swiper('.campain-slider', {
   speed: 400,
   loop: true,
   autoplay: {
@@ -148,6 +148,10 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 1,
     },
     640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    800: {
       slidesPerView: 3,
       spaceBetween: 40
     }

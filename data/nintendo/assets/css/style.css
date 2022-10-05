@@ -524,6 +524,18 @@ section {
   padding: 60px 0 40px 0;
 }
 
+@media (max-width:992px) {
+  #services .section-header h3 {
+    font-size: 30px;
+  }
+
+  #services .section-header span {
+    font-size: 16px;
+  }
+}
+
+
+
 #services .box {
   padding: 30px;
   position: relative;

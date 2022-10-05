@@ -435,6 +435,12 @@ section {
   width: 100%;
 }
 
+@media (max-width:992px) {
+  #information h4 {
+    margin-top: 2rem;
+  }
+}
+
 @media (min-width:992px) and (max-width:1399px) {
   #information h4 {
     font-size: 16px;
@@ -478,21 +484,32 @@ section {
 }
 
 #information_3 .button {
+  margin-top: 2rem;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-
-#information_3 .button a {
-  display: block;
-  padding: 10px 15px;
-  background-color: #555;
+  bottom: .5rem;
+  right: .5rem;
+  padding: 5px 10px;
   border-radius: 5px;
   transition: all .5s;
+  text-align: center;
+  background-color: #555;
+
 }
 
-#information_3 .button:hover a {
+@media (max-width: 992px) {
+  #information_3 .button {
+    position: relative;
+  }
+
+  #information_3 .info_cont {
+    text-align: center;
+  }
+
+
+}
+
+
+#information_3 .button:hover {
   background-color: #111;
 }
 
