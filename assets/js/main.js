@@ -164,7 +164,7 @@
       new Typed('.typed', {
         strings: typed_strings,
         loop: false,
-        typeSpeed: 100
+        typeSpeed: 70
       });
     }
   },1200);
