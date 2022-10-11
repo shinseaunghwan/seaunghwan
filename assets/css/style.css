@@ -277,11 +277,11 @@ a:hover {
 
 #hero .hero-content {
   height: 100vh;
-  text-align: left;
   width: 100%;
-  display: flex;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-content h1 {
@@ -341,15 +341,24 @@ a:hover {
 
 
 .hero-content h5 {
-  text-align: center;
+  text-align: left;
   font-size: 1.25rem;
   letter-spacing: 3px;
   margin-top: 0;
-  padding-right: 200px;
-  text-transform: capitalize;
   color: #222;
   font-weight: 700;
   transition: all .5s;
+}
+
+#hero .ct {
+  position: relative;
+}
+
+.ct h6 {
+  position: absolute;
+  font-size: 20px;
+  bottom: 1rem;
+  right: .25rem;
 }
 
 
@@ -905,10 +914,6 @@ section {
 # Contact 
 --------------------------------------------------------------*/
 
-.contact {
-  /* background: url(../img/bg11.png) no-repeat center bottom/cover; */
-}
-
 
 .contact .info-box {
   color: #333;
@@ -1033,6 +1038,10 @@ section {
   }
 
 
+  .ct h6 {
+    display: none;
+  }
+
   /* About */
   .head-info .header-content .cmaster h1 {
     font-size: 32px;
@@ -1108,6 +1117,8 @@ section {
     display: block;
   }
 
+  
+
   .hero-content h1 {
     font-size: 5rem;
   }
@@ -1122,6 +1133,10 @@ section {
 
   .hero-content h5 {
     font-size: .75rem;
+  }
+
+  .ct h6 {
+    display: none;
   }
 
   /* About */
@@ -1198,23 +1213,32 @@ section {
     display: block;
   }
 
+
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    text-align: center;
   }
 
   .hero-content h1::after {
 
-    font-size: 3rem;
-
+    display: none;
   }
 
   .hero-content h3 {
-    font-size: .75rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-content h3::after {
+    display: none;
   }
 
   .hero-content h5 {
-    font-size: .5rem;
+    font-size: .75rem;
+    text-align: center;
   }
+
+  
 
   /* About */
   .head-info .header-content h1 {
