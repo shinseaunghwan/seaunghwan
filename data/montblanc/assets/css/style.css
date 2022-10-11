@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2ce782;
+  background: #555;
   color: #fff;
 }
 
@@ -127,7 +127,6 @@ h6 {
 */
 
 .navbar {
-  background-color: ;
   margin: 0;
   padding: 0;
 }
