@@ -255,6 +255,7 @@ a:hover {
   animation: bg 17s linear infinite;
 }
 
+
 @keyframes bg {
   0% {
     background-color: lightskyblue;
